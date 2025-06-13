@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -67,12 +66,3 @@ mongoose.connect(process.env.MONGO_URI)
 //   })
 
 //   .catch(err => console.error('Error:', err));
-=======
-import app from './src/app.js';
-
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
->>>>>>> 749e71576dd0d6ae75f085e3cea5c3c02b5463c6
