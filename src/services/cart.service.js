@@ -1,16 +1,16 @@
-import CartDAO from '../dao/Cart.dao.js';
+import CartRepository from '../repository/Cart.repository.js';
 
 class CartService {
   async getUserCart(userId) {
-    return CartDAO.getByUser(userId);
+    return CartRepository.getByUser(userId);
   }
 
   async addProduct(userId, productId) {
-    return CartDAO.addProduct(userId, productId);
+    return CartRepository.addProduct(userId, productId);
   }
 
   async clear(userId) {
-    return CartDAO.clear(userId);
+    return CartRepository.clear(userId);
   }
 }
 

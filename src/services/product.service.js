@@ -1,24 +1,24 @@
-import ProductDAO from '../dao/Product.dao.js';
+import ProductRepository from '../repository/Product.repository.js';
 
 class ProductService {
   getAll() {
-    return ProductDAO.getAll();
+    return ProductRepository.getAll();
   }
 
   getById(id) {
-    return ProductDAO.getById(id);
+    return ProductRepository.getById(id);
   }
 
   create(data) {
-    return ProductDAO.create(data);
+    return ProductRepository.create(data);
   }
 
   update(id, data) {
-    return ProductDAO.update(id, data);
+    return ProductRepository.update(id, data);
   }
 
   delete(id) {
-    return ProductDAO.delete(id);
+    return ProductRepository.delete(id);
   }
 }
 
