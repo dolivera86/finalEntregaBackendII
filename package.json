@@ -14,6 +14,7 @@
   "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
+<<<<<<< HEAD
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
@@ -22,6 +23,12 @@
     "mongodb": "^6.17.0",
     "mongoose": "^8.15.0",
     "nodemailer": "^7.0.3",
+=======
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+>>>>>>> 749e71576dd0d6ae75f085e3cea5c3c02b5463c6
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1"
   },
