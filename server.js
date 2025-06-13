@@ -46,23 +46,3 @@ mongoose.connect(process.env.MONGO_URI)
     app.listen(PORT, () => console.log(`Corriendo en http://localhost:${PORT}`));
   })
   .catch(err => console.error('Error de conexión:', err));
-
-
-// import dotenv from 'dotenv';
-// dotenv.config();
-// import mongoose from 'mongoose';
-// import app from './src/app.js';
-
-
-// const PORT = process.env.PORT || 8080;
-
-// mongoose.connect(process.env.MONGO_URI)
-//   .then(() => {
-//     console.log('Conectado a MongoDB');
-
-//     app.listen(PORT, () => {
-//       console.log(`Servidor corriendo en http://localhost:${PORT}`);
-//     });
-//   })
-
-//   .catch(err => console.error('Error:', err));

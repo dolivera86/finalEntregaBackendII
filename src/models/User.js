@@ -5,7 +5,7 @@ export class User {
     this.last_name = last_name;
     this.email = email;
     this.age = age;
-    this.password = password; // Encriptado
+    this.password = password;
     this.cart = cart;
     this.role = role;
   }
