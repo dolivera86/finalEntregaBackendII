@@ -10,7 +10,7 @@ router.get('/register', viewController.renderRegister);
 
 export default router;
 
-
+ 
 
 // import { Router } from 'express';
 // import * as controller from '../controllers/view.controller.js';
