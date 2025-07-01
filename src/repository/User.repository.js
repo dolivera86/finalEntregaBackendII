@@ -1,4 +1,4 @@
-import UserDAO from '../dao/User.dao.js';
+import { UserDAO } from '../config/persistenceFactory.js';
 import UserDTO from '../dto/User.dto.js';
 
 class UserRepository {

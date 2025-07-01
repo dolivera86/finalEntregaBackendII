@@ -1,24 +1,26 @@
-import ProductRepository from '../repository/Product.repository.js';
+import PersistenceFactory from '../config/persistenceFactory.js';
+
+const ProductDAO = PersistenceFactory.getProductDao();
 
 class ProductService {
   getAll() {
-    return ProductRepository.getAll();
+    return ProductDAO.getAll();
   }
 
   getById(id) {
-    return ProductRepository.getById(id);
+    return ProductDAO.getById(id);
   }
 
   create(data) {
-    return ProductRepository.create(data);
+    return ProductDAO.create(data);
   }
 
   update(id, data) {
-    return ProductRepository.update(id, data);
+    return ProductDAO.update(id, data);
   }
 
   delete(id) {
-    return ProductRepository.delete(id);
+    return ProductDAO.delete(id);
   }
 }
 

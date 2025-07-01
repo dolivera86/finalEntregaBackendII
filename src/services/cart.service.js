@@ -1,16 +1,18 @@
-import CartRepository from '../repository/Cart.repository.js';
+import PersistenceFactory from '../config/persistenceFactory.js';
+
+const CartDAO = PersistenceFactory.getCartDao();
 
 class CartService {
   async getUserCart(userId) {
-    return CartRepository.getByUser(userId);
+    return CartDAO.getByUser(userId);
   }
 
   async addProduct(userId, productId) {
-    return CartRepository.addProduct(userId, productId);
+    return CartDAO.addProduct(userId, productId);
   }
 
   async clear(userId) {
-    return CartRepository.clear(userId);
+    return CartDAO.clear(userId);
   }
 }
 

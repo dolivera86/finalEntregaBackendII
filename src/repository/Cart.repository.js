@@ -1,4 +1,4 @@
-import CartDAO from '../dao/Cart.dao.js';
+import { CartDAO } from '../config/persistenceFactory.js';
 
 class CartRepository {
   async getByUser(userId) {

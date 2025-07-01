@@ -1,4 +1,4 @@
-import ProductDAO from '../dao/Product.dao.js';
+import { ProductDAO } from '../config/persistenceFactory.js';
 
 class ProductRepository {
   async getAll() {
